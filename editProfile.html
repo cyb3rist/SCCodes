@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SILIGURI CIRCLE</title>
+        <link rel="shortcut icon" href="images/favicon.png">
+        
+
+		<!-- GOOGLE FONTS : begin -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<!-- GOOGLE FONTS : end -->
+
+        <!-- STYLESHEETS : begin -->
+		<link rel="stylesheet" type="text/css" href="library/css/style.css">
+		<!-- To change to a different pre-defined color scheme, change "red.css" in the following element to blue.css | bluegray.css | green.css | orange.css
+		Please refer to the documentation to learn how to create your own color schemes -->
+        <link rel="stylesheet" type="text/css" href="library/css/skin/blue.css">
+		<link rel="stylesheet" type="text/css" href="library/css/custom.css">
+        
+        <link rel="stylesheet" type="text/css" href="library/css/SweetShopStyle.css">
+        <link rel="stylesheet" type="text/css" href="scss/SweetShopStyle.scss">
+		<!--[if lte IE 9]>
+		<link rel="stylesheet" type="text/css" href="library/css/oldie.css">
+		<![endif]-->
+		<!-- STYLESHEETS : end -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+            
+            
+            <!--*********PROFILE CARD***********-->
+            
+            <style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+/*********************END*******/
+            
+                
+                
+                
+                /*************CENTER PROFILE PIC DIV*****************/
+                
+ .center-div {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border-radius: 500px;
+    margin-top: -100px;
+}        
+                
+                
+.profilePic {
+     margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 500px;
+    margin-top: 0px;
+}  
+                
+
+.profileBgPic{
+    height: auto 0;
+    width: 100%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/profileBgPicUntitled.jpg);
+}                
+                
+                
+.intro{
+    text-align: center;
+    font-size: 33px;
+    color: #000;
+    font-weight: 800;
+}         
+                
+.bio{
+    text-align: center;
+    font-size: 22px;
+    color: #000;
+    font-weight: 200;               
+}
+                
+                
+ /**************SIDE SLIDE BAR MENU*****************START*******/
+                
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 80, 0.9) ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+   
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/**************SIDE SLIDE BAR MENU*****************END*******/
+                
+                
+/**************CAKE  DAY*****************ON*******/            
+        
+.cakeDay{
+    text-align: center;
+    font-weight: bold;
+}                               
+/*************CAKE  DAY********************OFF*******/
+                
+                
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+/********STYLE*************END*******/         
+</style>
+<!--*****STYLE*************END******-->      
+  
+</head>
+    
+    
+    
+<body>
+
+
+   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="myNotifications.html"><i style="font-size:24px" class="fa">&#xf0a2;</i> Notifications</a>
+ <!-- <a href="#"><i style="font-size:24px" class="fa">&#xf003;</i> Massages</a> -->
+  <a href="http://siliguricircle.com/chat"><i style="font-size:24px" class="fa">&#xf27b;</i> Chat</a>
+<!--  <a href="#"><i style="font-size:24px" class="fa">&#xf0c0;</i> Friends</a> -->
+<!--  <a href="#"><i style="font-size:24px" class="fa">&#xf002;</i> Search</a> -->
+<!--   <a href="#"><i style="font-size:24px" class="fa">&#xf03e;</i> Picrures</a>
+   <a href="#"><i style="font-size:24px" class="fa">&#xf073;</i> Events</a>
+   <a href="#"><i style="font-size:24px" class="fa">&#xf0f6;</i> Notes</a>
+   <a href="#"><i style="font-size:24px" class="fa">&#xf14e;</i> Nearby</a>
+   <a href="#"><i style="font-size:24px" class="fa">&#xf29c;</i> Help</a>  -->
+   <a href="bizHub.html"><i style="font-size:24px" class="fa">&#xf0f2;</i> Biz Hub</a>
+    <a href="adsHub.html"><i style="font-size:24px" class="fa">&#xf069;</i>  Ads Hub</a>
+    <a href="featureYourAds.html"><i style="font-size:24px" class="fa">&#xf0a1;</i> Feature Your Ads</a>
+ <!--   <a href="#"><i style="font-size:24px" class="fa">&#xf07a;</i> Shopping</a> -->
+     <a href="profile.html"><i style="font-size:24px" class="fa">&#xf007;</i> My Profile</a>
+     <a href="#"><i style="font-size:24px" class="fa">&#xf044;</i> Edit Profile</a>
+    <a href="#"><i  style="font-size:24px" class="fa fa-cog fa-spin"></i> Setting</a>
+        
+        
+</div>
+
+<div id="main">
+ 
+  
+  <span style="font-size:30px;cursor:pointer; background-color: white; float: right; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;" onclick="openNav()"> <i style="font-size:24px; padding: 12px 8px 8px 8px;" class="fa">&#xf0a6;</i></span>
+</div>
+
+   <!---------------MAIN------OPEN--------->                              
+                                    
+<div class="container-fluid" style="background-color: #ccc; height: auto; width: 100%;">                       
+<div  class="profileBgPic container-fluid" style="background-color: transparent; height: 300px; width: 100%;">
+ 
+</div> 
+    
+    
+ <div  class="container" style="background-color: white; height: auto; width: 98%; margin-top: -50px; margin-left: 1%; border-radius: 8px;">
+    
+    
+<div class="center-div"> <img class="profilePic" src="img/profilePicUntitled.jpg" style="position:fixeds ;" /></div>
+    
+   <p><div class="intro">My Name <span style="font-size: 25px; color: blue;"><i style="font-size:20px; color: blue;" class="fa">&#xf222;</i></span> <br/> <i style="font-size:19px" class="fa">&#xf041; Siliguri </i> </div>
+     <div class="bio"><h5>i am a software developer and coder</h5> </div>
+     <div class="cakeDay"><h6><i style="font-size:16px" class="fa">&#xf1fd;</i> &nbsp; Cake Day in: 300 days</h6></div>  </p>
+                 
+    <hr/>
+    
+    <h2 style="text-align: center;">EDIT PROFILE</h2>
+    
+    <h3>First Name: &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input  style="width: 50%;" type="text" name="FirstName" value=""></h3>
+    <h3>Last Name: &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input  style="width: 50%;" type="text" name="LastName" value=""></h3> <br/>
+    <h3>Bio: &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input  style="width: 50%;" type="text" name="LastName" value=""></h3> <br/>
+    
+    <h3>Date Of Birth:  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  <select style="width: 19%; font-size: 14px;" >
+        <option value="volvo">SECLECT</option>
+        <option value="volvo">January</option>
+        <option value="volvo">February</option>
+        <option value="volvo">March</option>
+        <option value="volvo">April</option>
+        <option value="volvo">May</option>
+        <option value="volvo">June</option>
+        <option value="volvo">July</option>
+        <option value="volvo">August</option>
+        <option value="volvo">September</option>
+        <option value="volvo">October</option>
+        <option value="volvo">November</option>
+        <option value="volvo">December</option>
+                            </select>
+    <select style="width: 19%; font-size: 14px;">
+        <option value="volvo">SECLECT</option>
+        <option value="volvo">1</option>
+        <option value="volvo">2</option>
+        <option value="volvo">3</option>
+        <option value="volvo">4</option>
+        <option value="volvo">5</option>
+        <option value="volvo">6</option>
+        <option value="volvo">7</option>
+        <option value="volvo">8</option>
+        <option value="volvo">9</option>
+        <option value="volvo">10</option>
+        <option value="volvo">11</option>
+        <option value="volvo">12</option>
+        <option value="volvo">13</option>
+        <option value="volvo">14</option>
+        <option value="volvo">15</option>
+        <option value="volvo">16</option>
+        <option value="volvo">17</option>
+        <option value="volvo">18</option>
+        <option value="volvo">19</option>
+        <option value="volvo">20</option>
+        <option value="volvo">21</option>
+        <option value="volvo">22</option>
+        <option value="volvo">23</option>
+        <option value="volvo">24</option>
+        <option value="volvo">25</option>
+        <option value="volvo">26</option>
+        <option value="volvo">27</option>
+        <option value="volvo">28</option>
+        <option value="volvo">29</option>
+        <option value="volvo">30</option>
+        <option value="volvo">31</option>
+
+        
+                            </select>
+    <select style="width: 19%; font-size: 14px;">
+        <option value="volvo">SECLECT</option>
+    <!--    <option value="volvo">2018</option>
+        <option value="volvo">2017</option>
+        <option value="volvo">2016</option>
+        <option value="volvo">2015</option>
+        <option value="volvo">2014</option>
+        <option value="volvo">2013</option>
+        <option value="volvo">2012</option>
+        <option value="volvo">2011</option>
+        <option value="volvo">2010</option>
+        <option value="volvo">2009</option>
+        <option value="volvo">2008</option>
+        <option value="volvo">2007</option>
+        <option value="volvo">2006</option>
+        <option value="volvo">2005</option> -->
+        <option value="volvo">2004</option> 
+        <option value="volvo">2003</option>
+        <option value="volvo">2002</option>
+        <option value="volvo">2001</option>
+        <option value="volvo">2000</option>
+        <option value="volvo">1999</option>
+        <option value="volvo">1998</option>
+        <option value="volvo">1997</option>
+        <option value="volvo">1996</option>
+        <option value="volvo">1995</option>
+        <option value="volvo">1994</option>
+        <option value="volvo">1993</option>
+        <option value="volvo">1992</option>
+        <option value="volvo">1991</option>
+        <option value="volvo">1990</option>
+        <option value="volvo">1989</option>
+        <option value="volvo">1988</option>
+        <option value="volvo">1987</option>
+        <option value="volvo">1986</option>
+        <option value="volvo">1985</option>
+        <option value="volvo">1984</option>
+        <option value="volvo">1983</option>
+        <option value="volvo">1982</option>
+        <option value="volvo">1981</option>
+        <option value="volvo">1980</option>
+        <option value="volvo">1979</option>
+        <option value="volvo">1978</option>
+        <option value="volvo">1977</option>
+        <option value="volvo">1976</option>
+        <option value="volvo">1975</option>
+        <option value="volvo">1974</option>
+        <option value="volvo">1973</option>
+        <option value="volvo">1972</option>
+        <option value="volvo">1971</option>
+        <option value="volvo">1970</option>
+        <option value="volvo">1969</option>
+        <option value="volvo">1968</option>
+        <option value="volvo">1967</option>
+        <option value="volvo">1966</option>
+        <option value="volvo">1965</option>
+        <option value="volvo">1964</option>
+        <option value="volvo">1963</option>
+        <option value="volvo">1962</option>
+        <option value="volvo">1961</option>
+        <option value="volvo">1960</option>
+        <option value="volvo">1959</option>
+        <option value="volvo">1958</option>
+        <option value="volvo">1957</option>
+        <option value="volvo">1956</option>
+        <option value="volvo">1955</option>
+        <option value="volvo">1954</option>
+        <option value="volvo">1953</option>
+        <option value="volvo">1952</option>
+        <option value="volvo">1951</option>
+        <option value="volvo">1950</option>
+        <option value="volvo">1949</option>
+        <option value="volvo">1948</option>
+        <option value="volvo">1947</option>
+        <option value="volvo">1946</option>
+        <option value="volvo">1945</option>
+        <option value="volvo">1944</option>
+        <option value="volvo">1943</option>
+        <option value="volvo">1942</option>
+        <option value="volvo">1941</option>
+        <option value="volvo">1940</option>
+        <option value="volvo">1939</option>
+        <option value="volvo">1938</option>
+        <option value="volvo">1937</option>
+        <option value="volvo">1936</option>
+        <option value="volvo">1935</option>
+        <option value="volvo">1934</option>
+        <option value="volvo">1933</option>
+        <option value="volvo">1932</option>
+        <option value="volvo">1931</option>
+        <option value="volvo">1930</option>
+        <option value="volvo">1929</option>
+        <option value="volvo">1928</option>
+        <option value="volvo">1927</option>
+        <option value="volvo">1926</option>
+        <option value="volvo">1925</option>
+        <option value="volvo">1924</option>
+        <option value="volvo">1923</option>
+        <option value="volvo">1922</option>
+        <option value="volvo">1921</option>
+        <option value="volvo">1920</option>
+        <option value="volvo">1919</option>
+        <option value="volvo">1918</option>
+        <option value="volvo">1917</option>
+        <option value="volvo">1916</option>
+        <option value="volvo">1915</option>
+        <option value="volvo">1914</option>
+        <option value="volvo">1913</option>
+        <option value="volvo">1912</option>
+        <option value="volvo">1911</option>
+        <option value="volvo">1910</option>
+        <option value="volvo">1909</option>
+        <option value="volvo">1908</option>
+        <option value="volvo">1907</option>
+        <option value="volvo">1906</option>
+        <option value="volvo">1905</option>
+        <option value="volvo">1904</option>
+        <option value="volvo">1903</option>
+        <option value="volvo">1902</option>
+        <option value="volvo">1901</option>
+        <option value="volvo">1900</option>
+        <option value="volvo">1899</option>
+        <option value="volvo">1898</option>
+        <option value="volvo">1897</option>
+        
+       
+        
+       
+      
+        
+       
+        
+        
+                            </select>
+    </h3>
+    
+    <h3>Gender: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <select style="width: 50%;">
+        <option value="volvo">SECLECT</option>
+        <option value="volvo">Male</option>
+        <option value="volvo">Female</option>
+        <option value="volvo">Other</option>
+                            </select> </h3>
+    
+    <h3>Country: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <select style="width: 50%;">
+        <option value="volvo">SECLECT</option>
+        <option value="volvo">India</option>
+                            </select> </h3>
+    
+    <h3>State: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <select style="width: 50%;">
+        <option value="volvo">SECLECT</option>
+        <option value="volvo">West Bengal</option>
+        <option value="volvo">Andra Pradesh</option>
+        <option value="volvo">Arunachal Pradesh</option>
+        <option value="volvo"> Assam</option>
+        <option value="volvo">Andaman and Nicobar Islandsl</option>
+        <option value="volvo">Bihar</option>
+        <option value="volvo">Chandigarh</option>
+        <option value="volvo">Chhattisgarh</option>
+        <option value="volvo">Dadar and Nagar Haveli</option>
+        <option value="volvo">Daman and Diu</option>
+        <option value="volvo">Delhi </option>
+        <option value="volvo">Goa</option>
+        <option value="volvo">Gujarat</option>
+        <option value="volvo">Haryana</option>
+        <option value="volvo">Himachal Pradesh</option>
+        <option value="volvo">Jammu and Kashmir</option>
+        <option value="volvo">Jharkhand</option>
+        <option value="volvo">Karnataka</option>
+        <option value="volvo">Kerala</option>
+        <option value="volvo">Lakshadeep</option>
+        <option value="volvo">Madya Pradesh</option>
+        <option value="volvo">Maharashtra</option>
+        <option value="volvo">Manipur</option>
+        <option value="volvo">Meghalaya</option>
+        <option value="volvo">Mizoram</option>
+        <option value="volvo">Nagaland</option>
+        <option value="volvo">Orissa</option>
+        <option value="volvo">Pondicherry</option>
+        <option value="volvo">Punjab</option>
+        <option value="volvo">Rajasthan</option>
+        <option value="volvo">Sikkim</option>
+        <option value="volvo">Tamil Nadu</option>
+        <option value="volvo">Tripura</option>
+        <option value="volvo">Uttaranchal</option>
+        <option value="volvo">Uttar Pradesh</option>
+
+    
+
+       
+
+
+        
+                            </select> </h3>
+    
+    <h3>Current City: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input  style="width: 50%;" type="text" name="FirstName" value=""> </h3>
+    <h3>HomeTown:   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input  style="width: 50%;" type="text" name="FirstName" value=""> </h3>
+    
+    <h3>Area Pin Code:   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; <input  style="width: 50%;" type="text" name="FirstName" value=""> </h3> <br/>
+    
+    <h3>Username:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <input  style="width: 50%;" type="text" name="FirstName" value=""></h3>
+    <h3>E-mail:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <input  style="width: 50%;" type="text" name="FirstName" value=""></h3>
+    <h3>Contact Number:  &nbsp; &nbsp;  <input  style="width: 50%;" type="text" name="FirstName" value=""></h3> <br/> <br/>
+    
+    
+    <h3>Twitter:   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input  style="width: 50%;" type="text" name="FirstName" value=""> </h3>
+    <h3>Google+:    &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input  style="width: 50%;" type="text" name="FirstName" value=""> </h3>
+    <h3>Instagram:   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input  style="width: 50%;" type="text" name="FirstName" value=""> </h3>
+    <h3>Facebook:   &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input  style="width: 50%;" type="text" name="FirstName" value=""> </h3>
+    <h3>LinkedIn:   &nbsp; &nbsp;   &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input  style="width: 50%;" type="text" name="FirstName" value=""> </h3>
+    <h3>Reddit:   &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input  style="width: 50%;" type="text" name="FirstName" value=""> </h3>
+   
+    
+    
+    <div><p style="color: white; background-color: blueviolet; padding: 5px; border-radius: 5px; width: 99%; text-align: center;">Save Changes</p></div>
+    <div><p style="color: #000; background-color: lightgray; padding: 5px; border-radius: 5px; width: 99%; text-align: center;">Cancel</p></div>
+    
+    
+    
+    
+    
+    
+</div>                                      
+
+  <!---------------MAIN--------CLOSE------->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SCRIPTS : begin -->
+		<script src="library/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="library/js/third-party.js" type="text/javascript"></script>
+		<script src="library/js/library.js" type="text/javascript"></script>
+		<script src="library/js/scripts.js" type="text/javascript"></script>
+
+        <!---------------SIDE SLIDER MENU BAR --------------ON------->
+     <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+      <!---------------SIDE SLIDER MENU BAR --------------OFF------->
+
+<!--CUSTOM JAVA SCRIPT LINKS----------STARTS--------->
+         <script src="library/js/js1.js" type="text/javascript"></script>
+
+    <!--NEWS SLIDER-------JS-----------STARTS------->
+        
+    <!--NEWS SLIDER-------JS-----------STARTS------->
+
+<!-- SCRIPTS : end -->
+
+	</body>
+</html>
